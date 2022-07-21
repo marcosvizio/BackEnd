@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Mouse",
+    "price": 100,
+    "thumbnail": "jpg",
+    "id": 3
+  },
+  {
+    "title": "Mouse",
+    "price": 100,
+    "thumbnail": "jpg",
+    "id": 2
+  },
+  {
+    "title": "Laptop",
+    "price": 1000,
+    "thumbnail": "jpg",
+    "id": 1
+  }
+]
