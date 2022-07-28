@@ -3,7 +3,6 @@ import express from 'express'
 
 const negocio  = new Contenedor('./productos.txt');
 
-//negocio.save({title: 'alpargata azul', price: 5090, thumbnail: 'http....'});
 const app = express()
 const port = 8080
 
