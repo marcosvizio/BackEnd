@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "tp3",
+  "version": "1.0.0",
+  "description": "trabajo practico de generacion de un server con express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

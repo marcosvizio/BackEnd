@@ -1,20 +1,20 @@
 [
   {
-    "title": "Mouse",
-    "price": 100,
-    "thumbnail": "jpg",
+    "title": "CPU",
+    "price": 5090,
+    "thumbnail": "http....",
     "id": 3
   },
-  {
+    {
     "title": "Mouse",
-    "price": 100,
-    "thumbnail": "jpg",
+    "price": 3000,
+    "thumbnail": "http....",
     "id": 2
   },
-  {
-    "title": "Laptop",
-    "price": 1000,
-    "thumbnail": "jpg",
+    {
+    "title": "Teclado",
+    "price": 2500,
+    "thumbnail": "http....",
     "id": 1
   }
 ]
