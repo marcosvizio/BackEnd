@@ -1,32 +1,32 @@
 [
   {
-    "title": "zaucony",
-    "price": "21",
-    "thumbnail": "http//zaucony.com",
+    "title": "PC",
+    "price": 10000,
+    "thumbnail": "http...",
     "id": "5"
   },
   {
-    "title": "zaucony grises",
-    "price": "33",
-    "thumbnail": "http//algo...",
+    "title": "Mouse",
+    "price": 3300,
+    "thumbnail": "http...",
     "id": "4"
   },
   {
-    "producto": "adidas violetas",
-    "precio": 12324,
-    "thumbnail": "http//....",
+    "producto": "Teclado",
+    "precio": 4000,
+    "thumbnail": "http....",
     "id": 3
   },
   {
-    "title": "nikes",
-    "price": "12",
-    "thumbnail": "http//....",
+    "title": "Camara Web",
+    "price": 5000,
+    "thumbnail": "http....",
     "id": "2"
   },
   {
-    "producto": "Croc azules",
-    "precio": 1211212123,
-    "thumbnail": "http//....",
+    "producto": "Monitor",
+    "precio": 8000,
+    "thumbnail": "http....",
     "id": 1
   }
 ]
