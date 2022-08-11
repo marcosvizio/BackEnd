@@ -1,16 +1,20 @@
 {
   "type": "module",
-  "name": "tp4",
+  "name": "tp5",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Contenedor.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "Damian",
+  "author": "Marcos",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "pug": "^3.0.2"
   }
 }

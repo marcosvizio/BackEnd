@@ -1,34 +1,51 @@
 import express from "express";
-import { produtosRouter } from "./productos.js";
-import { editarRouter } from "./editar.js";
+
+import Contenedor from './Contenedor.js';
+const productos = new Contenedor('./productos.json')
 
 const app = express()
+const port = 4000 || process.env.PORT
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(produtosRouter)
-app.use(editarRouter)
-app.all('/', async (req, res) => {
-    res.send(`
-    <div style="display:flex; justify-content: center; flex-direction: column;">
-                 <h1>Enviar producto</h1>
-                 <div>
-                    <form action="/api/productos" method="post">
-                        <label>nombre: <input type="text" id="title" name="title" require /></label>
-                        <label>precio: <input type="text" name="price"></label>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-    </div>`)
-  });
 
-app.all('*', async (req, res) => {
-    res.send('<div style="display:flex; justify-content: center;"><h1>Pagina no encontrada</h1></div>')
-  });
+app.set('views', './views')
+app.set('view engine', 'pug')
 
-const PORT = process.env.PORT || 8080
-app.listen(PORT, ()=>{
-    console.log(`escuchando el puerto ${PORT}`);
+app.use(express.static('public'))
+
+
+app.get('/', (req, res) => {  
+  res.render('creador.pug', {
+    titulo: "Subir productos Risk Store",
+    hayLista: true,
+    nav:"creador"})
 })
+
+app.post('/creador', async (req, res) => {
+    const producto = await productos.save(req.body);
+    const creado =  producto != -1
+    console.log(producto)
+    res.render('creadoConfirmacion.pug', {     
+      hayProducto: creado
+    })
+ })
+
+app.get('/productos', async (req, res) => {
+    const producto = await productos.getAll();
+    const hayLista = producto.length > 0;
+    res.render('index', {
+        titulo: "Risk Store 2022", 
+        listaProductos: producto,
+        hayLista,
+        nav:"productos"
+      })
+})
+ 
+app.listen(4000, err => {
+    if(err) throw new Error(`Erron on server: ${err}`)
+    console.log(`Server is running on port ${port}`)
+})
+
 
 
 

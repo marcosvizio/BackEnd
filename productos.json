@@ -1,32 +1,32 @@
 [
   {
-    "title": "PC",
-    "price": 10000,
-    "thumbnail": "http...",
-    "id": "5"
+    "producto": "Mouse Gamer Logitech",
+    "precio": 10000,
+    "thumbnail": "https://logitechar.vteximg.com.br/arquivos/ids/157034-450-450/910-005550_2.png?v=636985500388200000",
+    "id": 5
   },
   {
-    "title": "Mouse",
-    "price": 3300,
-    "thumbnail": "http...",
-    "id": "4"
+    "producto": "Auriculares Gamer Logitech",
+    "precio": 32000,
+    "thumbnail": "https://logitechar.vteximg.com.br/arquivos/ids/157596-450-450/G733-FOB-Lilac.png?v=637358693320070000",
+    "id": 4
   },
   {
-    "producto": "Teclado",
-    "precio": 4000,
-    "thumbnail": "http....",
+    "producto": "Teclado Gamer Logitech",
+    "precio": 30000,
+    "thumbnail": "https://logitechar.vteximg.com.br/arquivos/ids/157454-450-450/915TKL_1--1-.png?v=637312230408470000",
     "id": 3
   },
   {
-    "title": "Camara Web",
-    "price": 5000,
-    "thumbnail": "http....",
-    "id": "2"
+    "producto": "Auriculares Logitech",
+    "precio": 8000,
+    "thumbnail": "https://logitechar.vteximg.com.br/arquivos/ids/156546-450-450/981-000014_1.png?v=636973475273830000",
+    "id": 2
   },
   {
-    "producto": "Monitor",
-    "precio": 8000,
-    "thumbnail": "http....",
+    "producto": "Auriculares Deportivos Jaybird",
+    "precio": 10000,
+    "thumbnail": "https://logitechar.vteximg.com.br/arquivos/ids/156540-450-450/985-000810_1.png?v=636973475197030000",
     "id": 1
   }
 ]
