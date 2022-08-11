@@ -1,0 +1,25 @@
+.footer {
+    background-color: #222222;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+.titulo {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(22, 22, 22);
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+}
+.imagen {
+    width: 15rem;
+
+}

@@ -26,6 +26,7 @@ class Contenedor {
         console.log(obj)
         let id = Math.max(...ids) + 1;
         if (Object.keys(obj).length !== 0) {
+            if(obj.precio === '' && obj.producto === '') return -1
             try {
                 if (productosJson.length > 0) {
                     await fs.promises.writeFile(this.archivo, JSON.stringify([{ ...obj, id }, ...productosJson], null, 2), 'utf8')
