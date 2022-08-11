@@ -1,0 +1,48 @@
+html    
+    head
+        title=titulo
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js'
+                integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa'
+                crossorigin="anonymous"
+                )
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+             rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+             crossorigin="anonymous"
+        )
+        style
+            include ../public/style.css
+
+    body
+        include partials/title.pug
+        div(class="container")          
+            div(class="row m-4")
+                h2="Agregar Producto"
+                div(class="col")
+                    img(src="https://assets.spartangeek.com/cc/ew-thor-1_200106_021015.png"
+                        class="img-fluid"
+                        )
+                div(class="col d-flex flex-column align-items-center")
+                    form(method="POST"
+                        action="/creador")
+                        div(class="input-group mb-5")
+                            span(class="input-group-text" 
+                                id="basic-addon1")="Producto"
+                            input(type="text" id="producto" name="producto" class="form-control" placeholder="Producto" aria-label="Producto")    
+                        div(class="input-group mb-5")
+                            span(class="input-group-text")="$"
+                            input(type="text" class="form-control" id="precio" name="precio"   )
+                        label(for="basic-url"
+                            class="form-label"
+                            )="Coloque una imagen de el banco de Assets de Adidas"
+                        div(class="input-group mb-5")
+                            span(class="input-group-text"
+                                id="basic-addon3")="https://assets.riskstore.com/images/....jpg"
+                            input(type="text"
+                                class="form-control" 
+                                id="thumbnail"
+                                name="thumbnail" 
+                                aria-describedby="basic-addon3")
+                        button(type="submit"
+                                class="btn btn-dark w-100")="Agregar Producto"
+                        div(class="d-flex flex-column align-items-center")
+        include partials/footer.pug
